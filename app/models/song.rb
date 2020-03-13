@@ -12,8 +12,6 @@ class Song < ActiveRecord::Base
     # Hint: you won't want to create an artist record every time this method is called, only if an Drake is *not found*
     
     
-    
-    drake = song.artist
     Artist.create(name: "Drake")
     drake = song.artist
   end
